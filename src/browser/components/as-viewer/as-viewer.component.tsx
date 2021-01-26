@@ -12,6 +12,7 @@ export interface DispatchProps {
 	setAerialSphere: (aerialSphere:AS) => void;
 	setAppLoaded: () => void;
 }
+
 export type ASViewerProps = StateProps & DispatchProps;
 declare global {
 	
@@ -22,7 +23,6 @@ declare global {
 /// This loads the viewer and provides access to the AerialSphere api
 const ASViewer = (props:ASViewerProps) => {
 	const { appLoaded, setAerialSphere, setAppLoaded } = props;
-	
 	
 	React.useEffect(() => {
 		if(appLoaded){

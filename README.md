@@ -11,9 +11,7 @@ Once you have the repo cloned be sure to run
 
 If you are ready to test your build first ensure you are pointed to the right location
 ## Local Setup
-In the file founde at /public/index.html
 
-Make sure the script tag src is set to http://localhost:5000/api/map/js?key=6fa733b4-0285-4a4e-ada3-8e1cf7d22038
 Open your local asn and run the following commands in your asn project directory
 
 ### `nx serve experience-360-server`
@@ -44,10 +42,6 @@ Initialize your firebase setup
 Follow the set up steps found [https://aerialsphere.atlassian.net/wiki/spaces/AS/pages/706347009/AS+Hackathon](Here) if needed to setup the project.
 
 Once the project is setup with firebase you can get it deployed.
-
-In the file founde at /public/index.html
-
-Make sure the script tag src is set to https://dev.app.aerialsphere.com/api/map/js?key=6fa733b4-0285-4a4e-ada3-8e1cf7d22038
 
 ### `npm run build`
 ### `firebase deploy`
@@ -80,7 +74,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<!-- ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -88,10 +82,10 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it. -->
 
-## Learn More
+<!-- ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/). -->

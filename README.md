@@ -21,12 +21,12 @@ Once these two items are running you should be good to call in your AS-Hackathon
 
 ### `npm start`
 
-If everything goes to plan your project should be running at on your dev address [http://localhost:3000](DEV).
+If everything goes to plan your project should be running at on your dev address [dev](http://localhost:3000).
 
 
 ## Hosted Setup
 
-Head over to [https://firebase.google.com](Firebase) and follow the steps to setup a new project.
+Head over to [Firebase](https://firebase.google.com) and follow the steps to setup a new project.
 
 **NOTE: Do not use your work account to set up the project** 
 Once complete within your project directory run 
@@ -39,7 +39,7 @@ Login to the google account used to create the firebase project with
 Initialize your firebase setup
 ### `firebase init`
 
-Follow the set up steps found [https://aerialsphere.atlassian.net/wiki/spaces/AS/pages/706347009/AS+Hackathon](Here) if needed to setup the project.
+Follow the set up steps found [HERE](https://aerialsphere.atlassian.net/wiki/spaces/AS/pages/706347009/AS+Hackathon) if needed to setup the project.
 
 Once the project is setup with firebase you can get it deployed.
 

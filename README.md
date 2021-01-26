@@ -1,7 +1,58 @@
-# Getting Started with Create React App
+# AS Hackathon
+## Settings up Your Hackathon Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To build a local repo for the Hackthon first clone the repo in the root folder for your project
 
+### `git clone https://github.com/phatphauxe/as-hackathon.git`
+
+Once you have the repo cloned be sure to run 
+
+### `npm install`
+
+If you are ready to test your build first ensure you are pointed to the right location
+## Local Setup
+In the file founde at /public/index.html
+
+Make sure the script tag src is set to http://localhost:5000/api/map/js?key=6fa733b4-0285-4a4e-ada3-8e1cf7d22038
+Open your local asn and run the following commands in your asn project directory
+
+### `nx serve experience-360-server`
+### `nx serve experience-360-api-viewer`
+
+Once these two items are running you should be good to call in your AS-Hackathon project directory
+
+### `npm start`
+
+If everything goes to plan your project should be running at on your dev address [http://localhost:3000](DEV).
+
+
+## Hosted Setup
+
+Head over to [https://firebase.google.com](Firebase) and follow the steps to setup a new project.
+
+**NOTE: Do not use your work account to set up the project** 
+Once complete within your project directory run 
+### `npm install -g firebase-tools`
+
+Login to the google account used to create the firebase project with
+
+### `firebase login` 
+
+Initialize your firebase setup
+### `firebase init`
+
+Follow the set up steps found [https://aerialsphere.atlassian.net/wiki/spaces/AS/pages/706347009/AS+Hackathon](Here) if needed to setup the project.
+
+Once the project is setup with firebase you can get it deployed.
+
+In the file founde at /public/index.html
+
+Make sure the script tag src is set to https://dev.app.aerialsphere.com/api/map/js?key=6fa733b4-0285-4a4e-ada3-8e1cf7d22038
+
+### `npm run build`
+### `firebase deploy`
+
+Once deployed you can go to the logged url to view your hosted site.
 ## Available Scripts
 
 In the project directory, you can run:

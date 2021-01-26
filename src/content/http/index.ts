@@ -1,6 +1,6 @@
 /// axios is used here but you can feel free to use any sort of http request lib
 import axios, { AxiosRequestConfig } from 'axios';
-
+export {loadViewer} from './loadViewer';
 export const getRequest = <T>(url:string, config?: AxiosRequestConfig):Promise<T> => {
 	return axios.get(url, config);
 }

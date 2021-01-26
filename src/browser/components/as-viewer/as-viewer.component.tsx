@@ -1,6 +1,6 @@
 import React from 'react';
 import {AS, SphereData } from '../../../assets/models';
-import loadViewer from '../../../content/http/loadViewer';
+import {loadViewer} from '../../../content/http';
 import './as-viewer.styles.scss';
 
 export interface StateProps {

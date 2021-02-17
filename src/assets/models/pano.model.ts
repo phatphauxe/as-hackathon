@@ -6,6 +6,15 @@ export interface Pano {
 	latitude: number;
 }
 
+export interface ApiAutoRotate {
+	on: boolean;
+	speed: number;
+	right: boolean;
+	tilt?: number;
+	fov?: number;
+	zoom?: number;
+}
+
 export interface SphereData {
 	sphereLat?: number;
 	sphereLng?: number;
@@ -15,6 +24,10 @@ export interface SphereData {
 	cameraFov?: number;
 	cameraFovMin?: number;
 	cameraFovMax?: number;
+	cameraZoom?: number;
+	cameraZoomMin?: number;
+	cameraZoomMax?: number;
+	autoRotate?: ApiAutoRotate;
 	layers?: Array<ApiLayer>;
 }
 

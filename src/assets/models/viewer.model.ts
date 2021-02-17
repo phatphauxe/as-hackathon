@@ -5,6 +5,7 @@ export interface ApiMarker {
 	name?: string;
 	icon?: string;
 	style?: object
+	metaData?: { [key: string]: string | number };
 }
 
 export interface ApiLayer {
@@ -17,15 +18,16 @@ export interface Position {
 	lat: number;
 	lng: number;
 }
-  
+
 export interface Marker {
+
 	position: Position
 }
-  
+
 export interface PanoMarker {
 	marker: Marker
 }
-  
+
 export interface NearestPano {
 	distance: number;
 	panoMarker: PanoMarker;

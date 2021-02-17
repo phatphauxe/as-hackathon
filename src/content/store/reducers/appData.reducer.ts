@@ -1,13 +1,18 @@
-import { AppDataReducerState } from "../../../assets/models/store.model";
+import { AppDataReducerState, Listing, ZipCode } from "../../../assets/models/store.model";
 import { ActionTypes } from "../actions";
 import { Action } from "../actions/action.helpers";
+import { zipCodes } from "../../../browser/components/as-viewer/zipCodes";
+import { listings } from "../../../browser/components/as-viewer/mlsData";
 
 
-export type AppDataAction = string[] | boolean | number | string | null | undefined;
+export type AppDataAction = string[] | boolean | number | string | ZipCode | Listing[] | null | undefined;
 
 export const defaultAppState:AppDataReducerState = {
 	appLoaded: false,
 	data: null,
+	zipCodes: zipCodes,
+	currentZipCode: {zip: '85028', mls:'OW542DCT1SQ', city:'Phoenix'},
+	listings: listings
 }
 
 const App = ActionTypes.App;
@@ -28,8 +33,13 @@ const AppDataReducer = (state:AppDataReducerState = defaultAppState, action: Act
 		case App.getData.fulfilled: {
 			return { ...state, data: action.payload as string[]}
 		}
-		
-		default: 
+		case App.setListings: {
+			return { ...state, listings: action.payload as Listing[]}
+		}
+		case App.setCurrentZipCode: {
+			return { ...state, currentZipCode: action.payload as ZipCode}
+		}
+		default:
 			return state;
 	}
 }
